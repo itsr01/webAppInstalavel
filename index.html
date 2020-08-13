@@ -12,12 +12,13 @@
 
 <body>
     <h1>WebApp Instalável</h1>
-    <a href="pwa-examples-master/a2hs/index.html">teste</a>
 
 </body>
 
 <script>
-    alert('aki');
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+    }
 </script>
 
 </html>
