@@ -1,1 +1,1 @@
-self.addEventListener('fetch', () => console.log("fetch"));
+self.addEventListener('fetch', () => console.log(""));

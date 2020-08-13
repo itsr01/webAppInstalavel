@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
     <meta name="description" content="WebApp Instalável">
     <link rel="icon" href="favicon192.png" />
     <link rel="manifest" href="manifest.json">
@@ -12,16 +13,16 @@
 
 <body>
     <h1>WebApp Instalável</h1>
-
 </body>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
 
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js', {
-            scope: '.' // <--- THIS BIT IS REQUIRED
+            scope: '.'
         }).then(function(registration) {
             // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            //console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }, function(err) {
             // registration failed :(
             console.log('ServiceWorker registration failed: ', err);
