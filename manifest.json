@@ -7,7 +7,7 @@
         "type": "image/png"
     }],
     "start_url": ".",
-    "background_color": "#fff0",
+    "display": "standalone",
     "theme_color": "#fff0",
-    "display": "standalone"
+    "background_color": "#fff0"
 }
