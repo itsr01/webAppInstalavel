@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>A2HS demo</title>
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
     <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body>
+</head>
+
+<body>
     <img src="images/fox1.jpg" alt="a fox picture">
     <button class="add-button">Add to home screen</button>
-  </body>
+</body>
+<script>
+    // Register service worker to control making site work offline
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/pwa-examples/a2hs/sw.js')
+            .then(function() {
+                console.log('Service Worker Registered');
+            });
+    }
+</script>
+
 </html>
