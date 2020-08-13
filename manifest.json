@@ -1,10 +1,11 @@
 {
-    "short_name": "Aplicativo INstalável",
-    "name": "Aplicativo INstalável",
+    "short_name": "WebApp Instalável",
+    "name": "WebApp Instalável",
+    "description": "WebApp Instalável",
     "icons": [{
             "src": "favicon.png",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
+            "type": "image/png",
+            "sizes": "192x192"
         },
         {
             "src": "favicon.png",
@@ -12,8 +13,8 @@
             "sizes": "480x480"
         }
     ],
-    "start_url": ".",
+    "start_url": "/",
+    "background_color": "#3367D6",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "theme_color": "#3367D6"
 }
