@@ -13,21 +13,13 @@
 
 <body>
     <h1>WebApp Instalável</h1>
+    <hr>
+    <div id="installContainer">
+        <button id="butInstall" type="button">Instalar via "EventListener"</button>
+        <button onclick="instalarWebApp()">Instalar via "Function"</button>
+    </div>
 </body>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
 
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js', {
-            scope: '.'
-        }).then(function(registration) {
-            // Registration was successful
-            //console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    }
-</script>
+<script src="script.js"></script>
 
 </html>
