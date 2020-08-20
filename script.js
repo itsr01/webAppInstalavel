@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 
 
 window.addEventListener('beforeinstallprompt', (event) => {
-    console.log('👍', 'beforeinstallprompt', event);
+    // console.log('👍', 'beforeinstallprompt', event);
     event.preventDefault();
     // Stash the event so it can be triggered later.
     window.deferredPrompt = event;
@@ -22,7 +22,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 });
 
 butInstall.addEventListener('click', () => {
-    console.log('👍', 'butInstall-clicked');
+    // console.log('👍', 'butInstall-clicked');
     const promptEvent = window.deferredPrompt
     if (!promptEvent) {
         // The deferred prompt isn't available.
@@ -32,7 +32,7 @@ butInstall.addEventListener('click', () => {
     promptEvent.prompt();
     // Log the result
     promptEvent.userChoice.then((result) => {
-        console.log('👍', 'userChoice', result);
+        // console.log('👍', 'userChoice', result);
         // Reset the deferred prompt variable, since 
         // prompt() can only be called once.
         window.deferredPrompt = null;
@@ -42,7 +42,7 @@ butInstall.addEventListener('click', () => {
 });
 
 function instalarWebApp() {
-    console.log('👍', 'butInstall-clicked');
+    // console.log('👍', 'butInstall-clicked');
     const promptEvent = window.deferredPrompt
     if (!promptEvent) {
         // The deferred prompt isn't available.
@@ -52,7 +52,7 @@ function instalarWebApp() {
     promptEvent.prompt();
     // Log the result
     promptEvent.userChoice.then((result) => {
-        console.log('👍', 'userChoice', result);
+        // console.log('👍', 'userChoice', result);
         // Reset the deferred prompt variable, since 
         // prompt() can only be called once.
         window.deferredPrompt = null;
