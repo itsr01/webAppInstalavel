@@ -8,7 +8,6 @@
     <meta name="description" content="WebApp Instalável">
     <link rel="icon" href="favicon192.png" />
     <link rel="manifest" href="manifest.json">
-    <link id="tema" rel="stylesheet" href="css/theme.min.css">
     <title>WebApp Instalável</title>
 </head>
 
@@ -19,44 +18,10 @@
         <div id="installContainer" hidden="true" class="container">
             <button class="btn btn-primary" id="butInstall" type="button">Instalar via "EventListener"</button>
             <button class="btn btn-secondary" onclick="instalarWebApp()">Instalar via "Function"</button>
-            <hr>
-            <div class="card col-3">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <!-- Title -->
-                            <h6 class="text-uppercase text-muted mb-2">
-                                Value
-                            </h6>
-                            <!-- Heading -->
-                            <span class="h2 mb-0">
-                        Teste
-                        </span>
-                            <!-- Badge -->
-                            <span class="badge badge-soft-success mt-n1">
-                        v1.0
-                        </span>
-                        </div>
-                        <div class="col-auto">
-                            <!-- Icon -->
-                            <span class="h2 fe fe-dollar-sign text-muted mb-0"></span>
-                        </div>
-                    </div>
-                    <!-- / .row -->
-                </div>
-            </div>
-            <h4>Execute a função: <code>usarDark()</code> </h4>
-            <button class="btn btn-primary" onclick="usarDark()">usarDark()</button>
-            <p>Fonte:<code> https://dashkit.goodthemes.co/index.html</code></p>
         </div>
     </div>
 </body>
 
 <script src="script.js"></script>
-<script>
-    function usarDark() {
-        document.getElementById("tema").href = "css/theme-dark.min.css";
-    }
-</script>
 
 </html>
