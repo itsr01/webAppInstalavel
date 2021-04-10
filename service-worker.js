@@ -1,1 +1,1 @@
-self.addEventListener('fetch', () => console.log(""));
+console.log("Service Worker funcionando!");
